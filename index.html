@@ -1,1 +1,13 @@
-<!doctype html><title>Page title</title><p>Hi</p>
+<!doctype html>
+<html>
+<head>
+	<title>Page title</title>
+</head>
+<body>
+	<h2>Built by lukew3</h2>
+	<hr>
+	{% for build in collections.build %}
+		<h2><a href="{{ build.url }}">{{ build.data.title }}</a></h2>
+	{% endfor %}
+</body>
+</html>
