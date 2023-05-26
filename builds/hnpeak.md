@@ -1,5 +1,6 @@
 ---
 title: HNPeak
+tagline: Find out what rank a HackerNews post peaked at
 ---
 
 # HNPeak
