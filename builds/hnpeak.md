@@ -6,9 +6,11 @@ tagline: Find out what rank a HackerNews post peaked at
 # HNPeak
 gh: [https://github.com/lukew3/hnpeak](https://github.com/lukew3/hnpeak)
 
+## The Idea
 When I found out that somebody had posted [lukew3/mathgenerator](https://github.com/lukew3/mathgenerator) to [YC Hackernews](https://news.ycombinator.com) I wanted to know what position [that post](https://news.ycombinator.com/item?id=34047076) had peaked at. By the time that I noticed that Github stars and issues were pouring into my Github, the post had been up for about 3 hours and was at rank 7. I knew that it was likely at a higher position earlier but didn't know what it had reached. This curiosity led me to desire a product that could tell you which position a HN post had peaked at. Months later, I decided to build it.
 
-The idea is pretty simple. Every time that HN is updated, scrape the website and check if there is an entry that is at a higher position than it was the last time it was checked. The database is 3 columns:
+## Implementation
+The implementation is pretty simple. Every time that HN is updated, scrape the website and check if there is an entry that is at a higher position than it was the last time it was checked. The database is 3 columns:
 ```
 id (INT) | peak_rank (INT) | peak_time (INT)
 ```
